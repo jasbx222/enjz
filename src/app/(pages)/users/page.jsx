@@ -130,7 +130,7 @@ const Page = () => {
   };
 
   return (
-<div className="flex flex-col relative top-24 md:flex-row md:flex-wrap gap-6 items-center justify-center px-4 md:px-10 lg:px-20 mt-24">
+<div className="flex flex-col relative top-24 md:flex-row sm:flex-row md:flex-wrap sm:flex-wrap gap-6 items-center justify-center px-4 md:px-10 lg:px-20 mt-24">
   {users.map((user, idx) => (
     <UserCard
       key={idx}
