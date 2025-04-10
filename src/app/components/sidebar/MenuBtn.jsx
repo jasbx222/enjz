@@ -3,6 +3,7 @@
 import { Menu, X } from "lucide-react";
 import React, { useState } from "react";
 import Sidebar from "./Sidebar";
+import { motion } from "framer-motion"; // استيراد framer-motion
 
 const MenuBtn = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -13,25 +14,37 @@ const MenuBtn = () => {
 
   return (
     <div>
-      
+      {/* الأيقونة التي تتحول بشكل سموثي سريع */}
       {isSidebarOpen ? (
-        <X
-          onClick={toggleSidebar}
-          className="z-50 fixed right-[250px]"
-          size={40}
-          color="#fff"
-        />
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.2 }} // سرعة الأنيميشن
+        >
+          <X
+            onClick={toggleSidebar}
+            className="z-50 fixed right-[20px] top-[20px]"
+            size={40}
+            color="#fff"
+          />
+        </motion.div>
       ) : (
-        <Menu
-          onClick={toggleSidebar}
-          className="z-50 fixed right-[20px]"
-          size={40}
-          color="#001999"
-        />
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.2 }} // سرعة الأنيميشن
+        >
+          <Menu
+            onClick={toggleSidebar}
+            className="z-50 fixed right-[20px] top-[20px]"
+            size={40}
+            color="#001999"
+          />
+        </motion.div>
       )}
 
-
-      {isSidebarOpen && <Sidebar />}
+      {/* الأنيميشن للـ Sidebar */}
+      <Sidebar isSidebarOpen={isSidebarOpen} />
     </div>
   );
 };

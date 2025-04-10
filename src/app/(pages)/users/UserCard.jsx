@@ -85,8 +85,7 @@ const UserCard = ({ name, email, status, avatar, onChangeStatus, onSuspend }) =>
               </button>
             </div>
           </div>
-        </div>
-      )}
+        </div>      )}
     </div>
   );
 };

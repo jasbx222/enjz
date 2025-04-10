@@ -5,121 +5,112 @@ import UserCard from "./UserCard"; // عدّل المسار حسب مكان ال
 const Page = () => {
   const users = [
     {
-      name: "أحمد الزهراني",
-      email: "ahmed@example.com",
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
       status: "مفعل",
     },
     {
-      name: "سارة العلي",
-      email: "sara@example.com",
+      name: "ريم سعيد",
+      email: "reem@example.com",
       status: "معلق",
     },
     {
-      name: "سارة العلي",
-      email: "sara@example.com",
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "يوسف الجهني",
+      email: "yousef@example.com",
       status: "معلق",
     },
     {
-      name: "سارة العلي",
-      email: "sara@example.com",
+      name: "علي الشمري",
+      email: "ali@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "نور القحطاني",
+      email: "noor@example.com",
       status: "معلق",
     },
     {
-      name: "سارة العلي",
-      email: "sara@example.com",
+      name: "هند السعيد",
+      email: "hind@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "سلمان الفهد",
+      email: "salman@example.com",
       status: "معلق",
     },
     {
-      name: "سارة العلي",
-      email: "sara@example.com",
+      name: "مريم عبد الله",
+      email: "mariam@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "راشد العتيبي",
+      email: "rashid@example.com",
       status: "معلق",
     },
     {
-      name: "سارة العلي",
-      email: "sara@example.com",
+      name: "أماني الجهني",
+      email: "amani@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "طلال النعيمي",
+      email: "talal@example.com",
       status: "معلق",
     },
     {
-      name: "سارة العلي",
-      email: "sara@example.com",
+      name: "سارة الفهد",
+      email: "sarah@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "عبد الله القرشي",
+      email: "abdullah@example.com",
       status: "معلق",
     },
     {
-      name: "سارة العلي",
-      email: "sara@example.com",
+      name: "محمود الحربي",
+      email: "mahmoud@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "جواهر التميمي",
+      email: "jawaher@example.com",
       status: "معلق",
     },
     {
-      name: "سارة العلي",
-      email: "sara@example.com",
+      name: "إبراهيم العتيبي",
+      email: "ibrahim@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "نوف الزهراني",
+      email: "nouf@example.com",
       status: "معلق",
     },
     {
-      name: "سارة العلي",
-      email: "sara@example.com",
+      name: "فهد العنزي",
+      email: "fahd@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "أحمد الرفاعي",
+      email: "ahmed.r@example.com",
       status: "معلق",
     },
     {
-      name: "سارة العلي",
-      email: "sara@example.com",
-      status: "معلق",
+      name: "سلوى القحطاني",
+      email: "salwa@example.com",
+      status: "مفعل",
     },
-    {
-      name: "سارة العلي",
-      email: "sara@example.com",
-      status: "معلق",
-    },
-    {
-      name: "سارة العلي",
-      email: "sara@example.com",
-      status: "معلق",
-    },
-    {
-      name: "سارة العلي",
-      email: "sara@example.com",
-      status: "معلق",
-    },
-    {
-      name: "سارة العلي",
-      email: "sara@example.com",
-      status: "معلق",
-    },
-    {
-      name: "سارة العلي",
-      email: "sara@example.com",
-      status: "معلق",
-    },
-    {
-      name: "سارة العلي",
-      email: "sara@example.com",
-      status: "معلق",
-    },
-    {
-      name: "سارة العلي",
-      email: "sara@example.com",
-      status: "معلق",
-    },
-    {
-      name: "سارة العلي",
-      email: "sara@example.com",
-      status: "معلق",
-    },
-    {
-      name: "سارة العلي",
-      email: "sara@example.com",
-      status: "معلق",
-    },
-    {
-      name: "سارة العلي",
-      email: "sara@example.com",
-      status: "معلق",
-    },
-    {
-      name: "سارة العلي",
-      email: "sara@example.com",
-      status: "معلق",
-    },
-  ];
+];
+
 
   const handleStatusChange = (name) => {
     alert(`تم تعديل حالة ${name}`);
