@@ -38,7 +38,7 @@ const MenuBtn = () => {
             onClick={toggleSidebar}
             className="z-50 fixed right-[20px] top-[20px]"
             size={40}
-            color="#001999"
+            color="#fff"
           />
         </motion.div>
       )}

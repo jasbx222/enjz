@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={noto_Kufi_Arabic.className}>
+      <body  className="bg-[#0A1B3D] ">
         <MenuBtn/>
         <main>{children}</main>
       </body>
