@@ -6,7 +6,7 @@ import src from "../../../../public/img/logo.png";
 import { Box, ChartArea, Home, Notebook, Settings, Users } from "lucide-react";
 
 import Linkes from "./Linkes";
-import { motion } from "framer-motion"; // استيراد framer-motion
+import { motion } from "framer-motion"; 
 import './Sidebar.css'
 const Sidebar = ({ isSidebarOpen }) => {
   return (

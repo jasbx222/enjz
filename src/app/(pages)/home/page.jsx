@@ -1,12 +1,10 @@
-import Chart2 from '@/app/components/chart/Cahrt2'
-import Chart1 from '@/app/components/chart/Charts'
-import React from 'react'
+
+import Card from './Card'
 
 const page = () => {
   return (
-    <div className=' container w-[100%] flex flex-wrap  gap-24 relative top-24 md:justify-evenly md:items-center'>
-        <Chart1/>
-        <Chart2/>
+    <div className=' container h-[100vh]  block   relative  top-24 '>
+<Card/>
     </div>
   )
 }

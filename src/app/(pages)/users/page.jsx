@@ -1,86 +1,29 @@
-"use client"
-import React from "react";
-import UserCard from "./UserCard"; 
-import swal from 'sweetalert';
+"use client";
+import { useState } from "react";
+import UserTable from "./UserTable";
+import { Search } from "lucide-react";
 const Page = () => {
-  const users = [
-    {
-      name: "محمد الأحمدي",
-      email: "mohammed@example.com",
-      status: "مفعل",
-    },
-    {
-      name: "ريم سعيد",
-      email: "reem@example.com",
-      status: "معلق",
-    },
-    {
-      name: "فاطمة الجابري",
-      email: "fatima@example.com",
-      status: "مفعل",
-    },
-    {
-      name: "محمد الأحمدي",
-      email: "mohammed@example.com",
-      status: "مفعل",
-    },
-    {
-      name: "ريم سعيد",
-      email: "reem@example.com",
-      status: "معلق",
-    },
-    {
-      name: "ريم سعيد",
-      email: "reem@example.com",
-      status: "معلق",
-    },
-    {
-      name: "ريم سعيد",
-      email: "reem@example.com",
-      status: "معلق",
-    },
-    {
-      name: "ريم سعيد",
-      email: "reem@example.com",
-      status: "معلق",
-    },
- 
-];
-
-
-  const handleStatusChange = () => {
- swal({
-  title:'تم تعديل الحالة بنجاح',
-  icon:'success',
-  buttons:'حسنا',
-  dangerMode:false
- })
-  };
-
-  const handleSuspend = (name) => {
-  swal({
-    title:`${name}تم ايقاف حساب `,
-    
-  })
-  };
+  const [search, setSearch] = useState();
 
   return (
-<div
+    <div className="container mx-auto p-4">
+      <div className="flex justify-center items-center">
+        <div className="max-w-md mx-auto ">
+          <div className="relative top-12 flex gap-5">
+            <Search size={40} color="#fff" />
+            <input
+              type="search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              id="default-search"
+              className="block  w-[400px] p-6 h-[40px] ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            />
+          </div>
+        </div>
+      </div>
 
-className="flex  container bg-[#] h-[100%]  relative top-24 flex-col   md:flex-row  md:flex-wrap sm:flex-wrap gap-6 items-center justify-center px-4 md:px-10 lg:px-20 mt-24">
- 
-  {users.map((user, idx) => (
-    <UserCard
-      key={idx}
-      name={user.name}
-      email={user.email}
-      status={user.status}
-      onChangeStatus={() => handleStatusChange(user.name)}
-      onSuspend={() => handleSuspend(user.name)}
-    />
-  ))}
-</div>
-
+      <UserTable />
+    </div>
   );
 };
 
