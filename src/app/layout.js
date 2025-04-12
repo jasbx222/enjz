@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
-      <body  className="bg-[#0A1B3D] ">
+      <body  className="bg-[#141758] ">
         <MenuBtn/>
         <main>{children}</main>
       </body>

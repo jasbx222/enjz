@@ -20,7 +20,7 @@ const dataCard =[
 ]
 const Card = () => {
   return (
-    <div className="flex justify-evenly  flex-wrap gap-5 items-center">
+    <div className="flex justify-evenly z-20  flex-wrap gap-5 items-center">
         {
             dataCard.map((i)=>(
       
