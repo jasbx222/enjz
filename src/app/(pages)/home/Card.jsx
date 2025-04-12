@@ -25,7 +25,7 @@ const Card = () => {
             dataCard.map((i)=>(
       
                   <div key={i.title} className="bg-gradient-to-r from-[#001976] to-[#004aad] w-[320px] h-[250px] text-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col items-center gap-5">
-      {/* معلومات المستخدم */}
+  
       <div className=" block w-full gap-5 relative top-[70px]">
         <div className=" flex justify-center items-center  "  style={{marginBottom:'20px'}}>
           {i.icon}

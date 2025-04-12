@@ -1,9 +1,9 @@
 import { ShieldAlert } from "lucide-react";
 
 const statusColors = {
-  مفعل: "text-green-400",
-  "غير مفعل": "text-gray-400",
-  معلق: "text-yellow-400",
+  "مفعل": "text-green-400",
+  "غير مفعل": "text-red-500",
+  "معلق": "text-yellow-400",
 };
 const UserTable = () => {
   const users = [
@@ -20,7 +20,652 @@ const UserTable = () => {
     {
       name: "فاطمة الجابري",
       email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
       status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
+    },
+    {
+      name: "محمد الأحمدي",
+      email: "mohammed@example.com",
+      status: "مفعل",
+    },
+    {
+      name: "ريم سعيد",
+      email: "reem@example.com",
+      status: "معلق",
+    },
+    {
+      name: "فاطمة الجابري",
+      email: "fatima@example.com",
+      status: "غير مفعل",
     },
   ];
   return (
@@ -56,8 +701,8 @@ const UserTable = () => {
                 </button>
               </td>
               <td className="py-4 px-6">
-                <button className="bg-red-600 w-[100px] h-[30px] text-white rounded-3xl px-5 py-2 flex items-center justify-center gap-2 text-sm hover:bg-red-700 transition-all duration-300 shadow-lg">
-                  <ShieldAlert size={18} />
+                <button className="bg-red-600 w-fit md:w-[200px] h-[30px] text-white rounded-3xl px-5 py-2 flex items-center justify-center gap-2 text-sm hover:bg-red-700 transition-all duration-300 shadow-lg">
+                  <ShieldAlert size={20} />
                   إيقاف مع تنبيه
                 </button>
               </td>
