@@ -1,6 +1,6 @@
 
 
-import { ArrowDownLeftFromSquareIcon, StopCircle, Users } from 'lucide-react';
+import { ArrowDownLeftFromSquareIcon, StopCircle, User2, UserCheck, Users } from 'lucide-react';
 const dataCard =[
     {
         title:'المحتوى',
@@ -17,10 +17,15 @@ const dataCard =[
         number:'30',
         icon:<StopCircle size={40}/>
     },
+    {
+        title:'الموظفين',
+        number:'10',
+        icon:<UserCheck size={40}/>
+    },
 ]
 const Card = () => {
   return (
-    <div className="flex justify-evenly z-20  flex-wrap gap-5 items-center">
+    <div className="flex justify-evenly z-20 md:relative md:right-7 flex-wrap gap-5 items-center">
         {
             dataCard.map((i)=>(
       

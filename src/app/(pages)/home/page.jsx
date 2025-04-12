@@ -2,6 +2,7 @@ import './Home.css'
 import Card from './Card'
 import Image from 'next/image'
 import bg from '../../../../public/img/bg.jpg'
+import Chart from './Chart'
 const page = () => {
   return (
     <div className=' container h-[100vh]  block   relative  top-24 '>
@@ -15,6 +16,9 @@ const page = () => {
   alt='img'
   />
 
+<div className=' hidden md:block'>
+<Chart/>
+</div>
     </div>
   )
 }

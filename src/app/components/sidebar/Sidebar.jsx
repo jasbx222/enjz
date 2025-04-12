@@ -39,7 +39,7 @@ const Sidebar = ({ isSidebarOpen }) => {
      
         <Linkes
           label={"ادارة المحتوى"}
-          href={"/"}
+          href={"/content"}
           icon={<Notebook size={30} />}
         />
         <Linkes label={"ادارة الباقات"} href={"/"} icon={<Box size={30} />} />
