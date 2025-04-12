@@ -1,6 +1,6 @@
 
 
-import { ArrowDownLeftFromSquareIcon, StopCircle, User2, UserCheck, Users } from 'lucide-react';
+import { ArrowDownLeftFromSquareIcon, StopCircle,  UserCheck, Users } from 'lucide-react';
 const dataCard =[
     {
         title:'المحتوى',
