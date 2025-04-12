@@ -60,14 +60,15 @@ const Page = () => {
   const handleSuspend = (name) => {
   swal({
     title:`${name}تم ايقاف حساب `,
-    icon:'success',
-    buttons:'حسنا',
-    dangerMode:false
+    
   })
   };
 
   return (
-<div className="flex  container bg-[#] h-[100%] relative top-24 flex-col   md:flex-row sm:flex-row md:flex-wrap sm:flex-wrap gap-6 items-center justify-center px-4 md:px-10 lg:px-20 mt-24">
+<div
+
+className="flex  container bg-[#] h-[100%]  relative top-24 flex-col   md:flex-row  md:flex-wrap sm:flex-wrap gap-6 items-center justify-center px-4 md:px-10 lg:px-20 mt-24">
+ 
   {users.map((user, idx) => (
     <UserCard
       key={idx}
