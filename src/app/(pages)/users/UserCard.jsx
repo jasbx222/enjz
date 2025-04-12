@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { ShieldAlert, UserCheck, UserX } from "lucide-react";
+import { ShieldAlert } from "lucide-react";
 
 const statusColors = {
   "مفعل": "text-green-400",
@@ -9,7 +9,7 @@ const statusColors = {
   "معلق": "text-yellow-400",
 };
 
-const UserCard = ({ name, email, status, avatar, onChangeStatus, onSuspend }) => {
+const UserCard = ({ name, email, status, onChangeStatus }) => {
   const [showPopup, setShowPopup] = useState(false);
   const [reason, setReason] = useState('');
 
@@ -23,7 +23,12 @@ const UserCard = ({ name, email, status, avatar, onChangeStatus, onSuspend }) =>
   };
 
   const handleSubmitReason = () => {
-    alert(`سبب الإيقاف: ${reason}`);
+    swal({
+      title:`${reason}سبب الايقاف`,
+      icon:'success',
+      buttons:'حسنا',
+      dangerMode:false
+    })
     setShowPopup(false);
     setReason('');
   };

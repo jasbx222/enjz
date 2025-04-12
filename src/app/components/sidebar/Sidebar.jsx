@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import src from "../../../../public/img/logo.png";
 import { Box, ChartArea, Home, Notebook, Settings, Users } from "lucide-react";
+
 import Linkes from "./Linkes";
 import { motion } from "framer-motion"; // استيراد framer-motion
 import './Sidebar.css'
@@ -27,7 +28,7 @@ const Sidebar = ({ isSidebarOpen }) => {
       <ul className="navbar block relative top-[20px]  nav-link">
       <Linkes
           label={"الصفحة الرئيسية "}
-          href={"/"}
+          href={"/home"}
           icon={<Home size={30} />}
         />
         <Linkes

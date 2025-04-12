@@ -14,7 +14,7 @@ const MenuBtn = () => {
 
   return (
     <div>
-      {/* الأيقونة التي تتحول بشكل سموثي سريع */}
+    
       {isSidebarOpen ? (
         <motion.div
           initial={{ scale: 0 }}
@@ -43,7 +43,7 @@ const MenuBtn = () => {
         </motion.div>
       )}
 
-      {/* الأنيميشن للـ Sidebar */}
+
       <Sidebar isSidebarOpen={isSidebarOpen} />
     </div>
   );

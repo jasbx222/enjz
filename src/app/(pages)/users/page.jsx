@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
-import UserCard from "./UserCard"; // عدّل المسار حسب مكان الملف
-
+import UserCard from "./UserCard"; 
+import swal from 'sweetalert';
 const Page = () => {
   const users = [
     {
@@ -48,12 +48,22 @@ const Page = () => {
 ];
 
 
-  const handleStatusChange = (name) => {
-    alert(`تم تعديل حالة ${name}`);
+  const handleStatusChange = () => {
+ swal({
+  title:'تم تعديل الحالة بنجاح',
+  icon:'success',
+  buttons:'حسنا',
+  dangerMode:false
+ })
   };
 
   const handleSuspend = (name) => {
-    alert(`تم إيقاف ${name} مع إرسال تنبيه له`);
+  swal({
+    title:`${name}تم ايقاف حساب `,
+    icon:'success',
+    buttons:'حسنا',
+    dangerMode:false
+  })
   };
 
   return (
