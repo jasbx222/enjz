@@ -24,7 +24,7 @@ const UserTable = () => {
     },
   ];
   return (
-    <div className="overflow-x-auto  md:right-12 container relative top-24   w-[100%] mt-10 rounded  shadow-lg">
+    <div className="overflow-x-auto  container relative top-24 sm:right-5  w-[100%] mt-10 rounded  shadow-lg">
       <table className="w-full text-sm text-center rtl table-auto border-separate border-spacing-y-4">
         <thead className="text-white bg-gradient-to-r from-[#001976] to-[#004aad] text-lg">
           <tr>
