@@ -18,7 +18,7 @@ const data  = [
   ];
 const Chart1 = () => {
   return (
-    <RadarChart outerRadius={150} width={500} height={300} data={data}>
+    <RadarChart className="relative  right-10" outerRadius={150} width={500} height={300} data={data}>
       <PolarGrid />
       <PolarAngleAxis dataKey="subject" />
       <PolarRadiusAxis angle={30} domain={[0, 150]} />

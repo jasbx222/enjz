@@ -20,7 +20,7 @@ const data = [
 
 const Chart2 = () => {
   return (
-    <BarChart className=" relative  right-5" width={500} height={300} data={data}>
+    <BarChart className=" relative  right-12" width={500} height={300} data={data}>
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="subject" />
       <YAxis />

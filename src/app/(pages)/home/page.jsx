@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className=' container w-[100%] flex flex-wrap  relative top-24 md:justify-evenly md:items-center'>
+    <div className=' container w-[100%] flex flex-wrap  gap-24 relative top-24 md:justify-evenly md:items-center'>
         <Chart1/>
         <Chart2/>
     </div>
