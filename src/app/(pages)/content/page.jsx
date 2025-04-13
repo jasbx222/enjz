@@ -11,11 +11,11 @@ export default function Page() {
   return (
     <div
       dir="rtl"
-      className="min-h-screen relative   right-24 lg:right-62 container w-[70%] top-24 py-12 px-6 flex justify-center"
+      className="min-h-screen relative md:right-24  right-12 lg:right-62 container w-[70%] top-24 py-12 px-6 flex justify-center"
     >
       <div className="w-full max-w-6xl space-y-8">
         {/* العنوان */}
-        <h1 className="text-4xl font-bold text-white text-right">
+        <h1 className="text-4xl relative bottom-5 font-bold text-white text-right">
           إدارة الأسئلة الشائعة
         </h1>
         {/* هنا حقول اضافة السؤال  والجواب */}

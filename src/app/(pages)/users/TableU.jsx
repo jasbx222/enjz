@@ -28,14 +28,16 @@ const users = [
 ];
 export const TableU = ({ statusColors }) => {
   return (
-    <table className="w-full text-sm text-center rtl table-auto border-separate border-spacing-y-4">
+    <table className="w-full text-sm  text-center rtl table-auto border-separate border-spacing-y-4">
       <thead className="text-white bg-gradient-to-r from-[#001976] to-[#004aad] text-lg">
         <tr>
           <th className="py-4 px-6 ">الاسم</th>
           <th className="py-4 px-6 ">البريد الإلكتروني</th>
           <th className="py-4 px-6">الحالة</th>
           <th className="py-4 px-6">تعديل</th>
+
           <th className="py-4 px-6 ">إيقاف</th>
+          
         </tr>
       </thead>
       <tbody>
