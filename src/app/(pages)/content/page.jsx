@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <div
       dir="rtl"
-      className="min-h-screen relative   md:right-12 container w-[100%] top-24 py-12 px-6 flex justify-center"
+      className="min-h-screen relative   right-24 lg:right-62 container w-[70%] top-24 py-12 px-6 flex justify-center"
     >
       <div className="w-full max-w-6xl space-y-8">
         {/* العنوان */}

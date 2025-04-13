@@ -13,7 +13,7 @@ const Sidebar = ({ isSidebarOpen }) => {
     <motion.div
       className="sidebar fixed z-40 top-0 bottom-0 lg:right-0 p-2 w-[300px] overflow-y-auto text-center bg-[#001976]"
       initial={{ x: '100%' }}
-      animate={{ x: isSidebarOpen ? 0 : '100%' }}
+      animate={{ x: isSidebarOpen ? 0 : '200%' }}
       exit={{ x: '100%' }}
       transition={{
         type: "spring", 

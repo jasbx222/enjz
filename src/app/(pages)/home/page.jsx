@@ -9,9 +9,9 @@ const page = () => {
     <div className=" container h-[100vh]  block   relative  top-24 ">
       <Card />
       <ImageFile />
-      <div className=" hidden md:block">
+      {/* <div className=" hidden md:block">
         <Chart />
-      </div>
+      </div> */}
     </div>
   );
 };

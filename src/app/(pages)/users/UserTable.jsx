@@ -8,7 +8,7 @@ const statusColors = {
 };
 
   return (
-    <div className="overflow-x-auto  container relative top-24 sm:right-5  w-[100%] mt-10 rounded  shadow-lg">
+    <div className="overflow-x-auto  container relative top-24   lg:right-24  w-[100%] mt-10 rounded  shadow-lg">
      <TableU statusColors={statusColors}/>
     </div>
   );
