@@ -6,7 +6,7 @@
     @apply bg-[#0A1B3D] text-gray-200 font-bold h-[50px] flex items-center justify-center gap-5  rounded;
   }
   .hover-link{
-    @apply hover:bg-amber-50 hover:text-gray-900
+    @apply hover:bg-amber-100 hover:text-gray-900
   }
 
 }
@@ -21,11 +21,8 @@
 }
 
 *{
-
-  margin: 0;
+ margin: 0;
   padding: 0;
-  
-
 }
 
 

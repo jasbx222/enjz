@@ -1,45 +1,72 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { TextArea, Button } from "./InputField";
-import { TableQ } from "./TableQ";
+import { Pen, Trash2 } from "lucide-react";
 
 export default function Page() {
-  const [newQuestion, setNewQuestion] = useState("");
-  const [newAnswer, setNewAnswer] = useState("");
-
   return (
-    <div
-      dir="rtl"
-      className="min-h-screen relative md:right-24  right-12 lg:right-62 container w-[70%] top-24 py-12 px-6 flex justify-center"
-    >
-      <div className="w-full max-w-6xl space-y-8">
-        {/* العنوان */}
-        <h1 className="text-4xl relative bottom-5 font-bold text-white text-right">
-          إدارة الأسئلة الشائعة
-        </h1>
-        {/* هنا حقول اضافة السؤال  والجواب */}
-        <div className="bg-gray-700 h-[200px] rounded-lg shadow-md p-8 border border-gray-600 space-y-6">
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
-            <TextArea
-              label={"السؤال"}
-              onChange={(e) => setNewQuestion(e.target.value)}
-              value={newQuestion}
-            />
-            <TextArea
-              label={"الجواب"}
-              onChange={(e) => setNewAnswer(e.target.value)}
-              value={newAnswer}
-            />
-          </div>
-          <div className="text-center relative top-12">
-            {/* زر الاضافه */}
-            <Button />
-          </div>
+    <div className="min-h-screen bg-[#1e222d] p-5 w-full">
+      <div className="relative top-24 container w-full md:right-8">
+      <div className="mt-5">
+          <button className="bg-[#001976] w-[200px] h-[40px] text-white px-4 py-2 rounded hover:bg-[#0A1B3D]">
+            إضافة سؤال
+          </button>
+        </div>
+        <div className="flex justify-between items-center mb-4">
+         
+          <input
+            type="text"
+            placeholder="بحث"
+            className="bg-[#2c478d] relative  top-5 w-[100%] h-[50px]  text-center text-white placeholder-gray-400 px-3 py-2 rounded focus:outline-none"
+          />
         </div>
 
-        {/* جدول الأسئلة */}
-        <TableQ />
+        <div className="bg-[#2d323f] relative top-24 rounded overflow-hidden">
+          <table className="w-full text-right">
+            <thead className="text-gray-300 border-b border-gray-700">
+              <tr className="px-4 py-3">
+                <th className="p-3">#</th>
+                <th className="p-3">العنوان</th>
+                <th className="p-3">تم الإنشاء</th>
+                <th className="p-3">إجراءات</th>
+              </tr>
+            </thead>
+            <tbody className="text-white">
+              <tr className="border-b border-gray-700">
+                <td className="p-3">1</td>
+                <td className="p-3">كيف يمكنني تسجيل الدخول؟</td>
+                <td className="p-3">2023-12-06 | 11:27 ص</td>
+                <td className="p-3">
+                  <div className="flex gap-2 justify-end">
+                    <button className="bg-red-600 p-2 rounded hover:bg-red-700">
+                      <Trash2 />
+                    </button>
+                    <button className="bg-indigo-600 p-2 rounded hover:bg-indigo-700">
+                      <Pen />
+                    </button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr className="border-b border-gray-700">
+                <td className="p-3">2</td>
+                <td className="p-3">كيف يمكنني إنشاء حساب؟</td>
+                <td className="p-3">2023-12-06 | 11:27 ص</td>
+                <td className="p-3">
+                  <div className="flex gap-2 justify-end">
+                    <button className="bg-red-600 p-2 rounded hover:bg-red-700">
+                      <Trash2/>
+                    </button>
+                    <button className="bg-indigo-600 p-2 rounded hover:bg-indigo-700">
+                  <Pen/>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+  
       </div>
     </div>
   );

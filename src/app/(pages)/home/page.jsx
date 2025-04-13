@@ -2,16 +2,16 @@
 import "./Home.css";
 import Card from "./Card";
 
-import Chart from "./Chart";
 import { ImageFile } from "./Image";
+import DashboardChart from "./Chart";
 const page = () => {
   return (
     <div className=" container h-[100vh]  block   relative  top-24 ">
       <Card />
-      <ImageFile />
-      {/* <div className=" hidden md:block">
-        <Chart />
-      </div> */}
+  
+      <div className="">
+        <DashboardChart/>
+      </div> 
     </div>
   );
 };

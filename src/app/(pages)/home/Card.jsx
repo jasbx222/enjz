@@ -1,49 +1,34 @@
-import { StopCircle, UserCheck, Users } from "lucide-react";
-const dataCard = [
-  {
-    title: "المستخدمين",
-    number: "160",
-    icon: <Users size={40} />,
-  },
-  {
-    title: "المتوقفين",
-    number: "30",
-    icon: <StopCircle size={40} />,
-  },
-  {
-    title: "الموظفين",
-    number: "10",
-    icon: <UserCheck size={40} />,
-  },
-];
-const Card = () => {
+'use client';
+
+import { CarTaxiFront, FileWarning, IdCard, User2, UserCheck, Users } from "lucide-react";
+
+export default function Card() {
+  const stats = [
+    { label: 'مجموع المستخدمين', value: 15, icon:<Users/>},
+    { label: 'مجموع الباقات', value: 69, icon: <IdCard/> },
+    { label: 'مستخدمين  متوقفين', value: 1, icon:<FileWarning/> },
+    { label: 'مجموع الموظفين', value: 2, icon:<User2/> },
+    { label: 'مجموع العملاء', value: 5, icon:<UserCheck/>},
+  ];
+
+
   return (
-    <div className="flex justify-evenly z-20 md:relative md:right-7 flex-wrap gap-5 items-center">
-      {dataCard.map((i) => (
-        <div
-          key={i.title}
-          className="bg-gradient-to-r from-[#001976] to-[#004aad] w-[320px] h-[250px] text-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col items-center gap-5"
-        >
-          <div className=" block w-full gap-5 relative top-[70px]">
-            <div
-              className=" flex justify-center items-center  "
-              style={{ marginBottom: "20px" }}
-            >
-              {i.icon}
-            </div>
-
-            <h2 className="text-2xl mt-5 font-extrabold text-white text-center tracking-wide">
-              {i.title}
-            </h2>
-
-            <p className={`mt-2 text-sm font-medium  text-center`}>
-              {i.number}
-            </p>
+    <div dir="rtl" className="min-h-screen container  relative lg:right-8 bg-[] text-white p-4">
+      {/* الشريط العلوي للإحصائيات */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-6">
+        {stats.map((item, idx) => (
+          <div
+            key={idx}
+            className="bg-[#1b4180]  relative top-5 rounded-lg py-4 px-2 flex flex-col items-center border border-gray-700"
+          >
+            <div className="text-3xl mb-1">{item.icon}</div>
+            <div className="text-sm text-gray-300">{item.label}</div>
+            <div className="text-lg font-bold">{item.value}</div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+
+     
     </div>
   );
-};
-
-export default Card;
+}
