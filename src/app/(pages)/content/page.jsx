@@ -1,5 +1,6 @@
 "use client";
 
+import Button from "@/app/components/inputs/Button";
 import SearchInput from "@/app/components/inputs/SearchInput";
 import { Pen, Trash2 } from "lucide-react";
 
@@ -7,11 +8,7 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-[#0A1B3D] p-5 w-full">
       <div className="relative top-24 container w-full md:right-8">
-        <div className="mt-5">
-          <button className="bg-[#001976] w-[200px] h-[40px] text-white px-4 py-2 rounded hover:bg-[#0A1B3D]">
-            إضافة سؤال
-          </button>
-        </div>
+     <Button label={'ابحث عن سؤال'}/>
     <SearchInput  value={'ابحث عن سؤال'}/>
 
         <div className="bg-[#13294B] relative top-24 rounded overflow-hidden">
@@ -25,11 +22,11 @@ export default function Page() {
               </tr>
             </thead>
             <tbody className="text-white">
-              <tr className="border-b border-gray-700 bg-[#0A1B3D] hover:bg-[#0f2a50]">
-                <td className="p-3">1</td>
-                <td className="p-3">كيف يمكنني تسجيل الدخول؟</td>
-                <td className="p-3">2023-12-06 | 11:27 ص</td>
-                <td className="p-3">
+              <tr className="border border-gray-700 bg-[#0A1B3D] hover:bg-[#0f2a50]">
+                <td className="p-3 border border-gray-500">1</td>
+                <td className="p-3 border border-gray-500">كيف يمكنني تسجيل الدخول؟</td>
+                <td className="p-3 *: border border-gray-500">2023-12-06 | 11:27 ص</td>
+                <td className="p-3 border border-gray-500">
                   <div className="flex gap-2 justify-end">
                     <button className="bg-red-600 p-2 rounded hover:bg-red-700">
                       <Trash2 />
@@ -41,11 +38,11 @@ export default function Page() {
                 </td>
               </tr>
 
-              <tr className="border-b border-gray-700 bg-[#0A1B3D] hover:bg-[#0f2a50]">
-                <td className="p-3">2</td>
-                <td className="p-3">كيف يمكنني إنشاء حساب؟</td>
-                <td className="p-3">2023-12-06 | 11:27 ص</td>
-                <td className="p-3">
+              <tr className="border border-gray-700 bg-[#0A1B3D] hover:bg-[#0f2a50]">
+                <td className="p-3 border border-gray-500">2</td>
+                <td className="p-3 border border-gray-500">كيف يمكنني إنشاء حساب؟</td>
+                <td className="p-3 border border-gray-500">2023-12-06 | 11:27 ص</td>
+                <td className="p-3 border border-gray-500">
                   <div className="flex gap-2 justify-end">
                     <button className="bg-red-600 p-2 rounded hover:bg-red-700">
                       <Trash2 />

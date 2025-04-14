@@ -6,7 +6,7 @@ export default function SearchInput ({
 }) {
  
   return (
-    <div className="mb-4 flex justify-center relative bottom-8 top-12">
+    <div className="mb-4 flex container justify-center relative bottom-8 top-12">
     <input
       type="text"
       placeholder={value}

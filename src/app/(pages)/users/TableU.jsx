@@ -5,7 +5,7 @@ import {  Pen, Trash2 } from 'lucide-react';
 export const TableU = ({filteredUsers}) => {
  
   return (
-<div className="bg-[#13294B] relative top-24 rounded-lg overflow-x-auto shadow-lg">
+<div className="bg-[#13294B] relative top-24  rounded-lg overflow-x-auto shadow-lg">
         <table className="min-w-full border-separate" style={{ borderSpacing: '0 8px' }}>
           <thead>
             <tr className="bg-[#13294B] text-gray-300">
@@ -28,7 +28,7 @@ export const TableU = ({filteredUsers}) => {
                   <td className="py-3 px-4 text-right">{user.name}</td>
                   <td className="py-3 px-4 text-right">{user.email}</td>
                   <td className="py-3 px-4 text-right">
-                    <span className="bg-[#1F3B60]  h-[40px] w-[40px] flex justify-center  items-center border border-[#00C49F] text-xs font-medium rounded-full py-1 px-3">
+                    <span className={`${user.status==="نشط"?"text-green-400":"text-red-500"}  h-[40px] w-[40px] flex justify-center  items-center  text-xs font-medium  py-1 px-3`}>
                       {user.status}
                     </span>
                   </td>

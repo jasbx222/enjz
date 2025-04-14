@@ -1,10 +1,10 @@
-import { FileWarning, HelpCircle, NutOffIcon, PlusCircle } from "lucide-react";
+import { FileWarning, HelpCircle, NutOffIcon, UserCheck2 } from "lucide-react";
 import { X } from "lucide-react";
 import Linkes from "./Linkes";
 
 const Setting = ({x}) => {
   return (
-    <div className="h-auto w-[250px] z-40   rounded-2xl  absolute bottom-0 right-3 bg-[#475174]  pb-5 block gap-5">
+    <div className="h-auto w-[250px] z-40   rounded-2xl  absolute bottom-0 right-3 bg-[#0f2a50]  pb-5 block gap-5">
       <button
         className=" relative right-28 bottom-2 z-50 text-white text-2xl"
         onClick={x}
@@ -12,9 +12,9 @@ const Setting = ({x}) => {
         <X />
       </button>
       <Linkes
-        label={" اضافة موظف"}
-        href={"/سس"}
-        icon={<PlusCircle size={20} />}
+        label={"الموظفين"}
+        href={"/empolyed"}
+        icon={<UserCheck2 size={20} />}
       />
       <Linkes
         label={"الدعم الفني"}
