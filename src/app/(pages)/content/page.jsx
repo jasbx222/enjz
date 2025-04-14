@@ -1,26 +1,20 @@
-'use client';
+"use client";
 
+import SearchInput from "@/app/components/inputs/SearchInput";
 import { Pen, Trash2 } from "lucide-react";
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-[#1e222d] p-5 w-full">
+    <div className="min-h-screen bg-[#0A1B3D] p-5 w-full">
       <div className="relative top-24 container w-full md:right-8">
-      <div className="mt-5">
+        <div className="mt-5">
           <button className="bg-[#001976] w-[200px] h-[40px] text-white px-4 py-2 rounded hover:bg-[#0A1B3D]">
             إضافة سؤال
           </button>
         </div>
-        <div className="flex justify-between items-center mb-4">
-         
-          <input
-            type="text"
-            placeholder="بحث"
-            className="bg-[#2c478d] relative  top-5 w-[100%] h-[50px]  text-center text-white placeholder-gray-400 px-3 py-2 rounded focus:outline-none"
-          />
-        </div>
+    <SearchInput  value={'ابحث عن سؤال'}/>
 
-        <div className="bg-[#2d323f] relative top-24 rounded overflow-hidden">
+        <div className="bg-[#13294B] relative top-24 rounded overflow-hidden">
           <table className="w-full text-right">
             <thead className="text-gray-300 border-b border-gray-700">
               <tr className="px-4 py-3">
@@ -31,7 +25,7 @@ export default function Page() {
               </tr>
             </thead>
             <tbody className="text-white">
-              <tr className="border-b border-gray-700">
+              <tr className="border-b border-gray-700 bg-[#0A1B3D] hover:bg-[#0f2a50]">
                 <td className="p-3">1</td>
                 <td className="p-3">كيف يمكنني تسجيل الدخول؟</td>
                 <td className="p-3">2023-12-06 | 11:27 ص</td>
@@ -47,17 +41,17 @@ export default function Page() {
                 </td>
               </tr>
 
-              <tr className="border-b border-gray-700">
+              <tr className="border-b border-gray-700 bg-[#0A1B3D] hover:bg-[#0f2a50]">
                 <td className="p-3">2</td>
                 <td className="p-3">كيف يمكنني إنشاء حساب؟</td>
                 <td className="p-3">2023-12-06 | 11:27 ص</td>
                 <td className="p-3">
                   <div className="flex gap-2 justify-end">
                     <button className="bg-red-600 p-2 rounded hover:bg-red-700">
-                      <Trash2/>
+                      <Trash2 />
                     </button>
                     <button className="bg-indigo-600 p-2 rounded hover:bg-indigo-700">
-                  <Pen/>
+                      <Pen />
                     </button>
                   </div>
                 </td>
@@ -65,8 +59,6 @@ export default function Page() {
             </tbody>
           </table>
         </div>
-
-  
       </div>
     </div>
   );

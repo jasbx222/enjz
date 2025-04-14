@@ -2,7 +2,6 @@
 import "./Home.css";
 import Card from "./Card";
 
-import { ImageFile } from "./Image";
 import DashboardChart from "./Chart";
 const page = () => {
   return (

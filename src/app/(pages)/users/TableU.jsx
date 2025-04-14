@@ -1,13 +1,11 @@
 
-"use client"
-import { Delete, Pen, Trash2 } from 'lucide-react';
-import { useState } from 'react';
+import {  Pen, Trash2 } from 'lucide-react';
 
 
 export const TableU = ({filteredUsers}) => {
  
   return (
-<div className="bg-[#13294B] rounded-lg overflow-x-auto shadow-lg">
+<div className="bg-[#13294B] relative top-24 rounded-lg overflow-x-auto shadow-lg">
         <table className="min-w-full border-separate" style={{ borderSpacing: '0 8px' }}>
           <thead>
             <tr className="bg-[#13294B] text-gray-300">
