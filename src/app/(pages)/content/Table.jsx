@@ -2,7 +2,7 @@
 import {  Pen, Trash2 } from 'lucide-react';
 
 
-export const Table= ({filterpaq}) => {
+export const Table= ({filterquestions}) => {
  
   return (
 <div className="bg-[#13294B] relative top-24  rounded-lg overflow-x-auto shadow-lg">
@@ -11,34 +11,31 @@ export const Table= ({filterpaq}) => {
             <tr className="bg-[#13294B] text-gray-300">
               <th className="py-3 px-4 text-right">#</th>
               <th className="py-3 px-4 text-right">الاسم</th>
-              <th className="py-3 px-4 text-right"> السعة</th>
-              <th className="py-3 px-4 text-right">الحالة</th>
+              <th className="py-3 px-4 text-right"> السؤال</th>
+              <th className="py-3 px-4 text-right">الجواب</th>
               <th className="py-3 px-4 text-right">تاريخ الإنشاء</th>
-              <th className="py-3 px-4 text-right">السعر</th>
               <th className="py-3 px-4 text-center">الإجراءات</th>
             </tr>
           </thead>
           <tbody>
-            {filterpaq.length > 0 ? (
-              filterpaq.map((paq, index) => (
+            {filterquestions.length > 0 ? (
+              filterquestions.map((ques, index) => (
                 <tr
-                  key={paq.id}
+                  key={ques.id}
                   className="bg-[#0A1B3D] hover:bg-[#0f2a50] transition-colors"
                 >
                   <td className="py-3 px-4 text-right">{index + 1}</td>
-                  <td className="py-3 px-4 text-right">{paq.name}</td>
-                  <td className="py-3 px-4 text-right">{paq.size}</td>
+                  <td className="py-3 px-4 text-right">{ques.user}</td>
+                  <td className="py-3 px-4 text-right">{ques.question}</td>
                   <td className="py-3 px-4 text-right">
-                    <span className={`${paq.status==="نشط"?"text-green-400":"text-red-500"}  h-[40px] w-[40px] flex justify-center  items-center  text-xs font-medium  py-1 px-3`}>
-                      {paq.status}
+                    <span className={` h-[40px] w-[40px] flex justify-center  items-center  text-xs font-medium  py-1 px-3`}>
+                      {ques.answer}
                     </span>
                   </td>
                   <td className="py-3 px-4 text-right text-sm text-gray-400">
-                    {paq.createdAt} 
+                    {ques.createdAt} 
                   </td>
-                  <td className="py-3 px-4 text-right text-sm text-gray-400">
-                    {paq.price} 
-                  </td>
+             
                   <td className="py-3 px-4 text-center flex items-center justify-center gap-2">
                    
                     <button
