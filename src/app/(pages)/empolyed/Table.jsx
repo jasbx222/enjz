@@ -37,7 +37,7 @@ export const Table= ({filterempolyeds}) => {
                     {emp.createdAt} 
                   </td>
              
-                  <td className="py-3 px-4 text-right text-sm text-gray-400">
+                  <td className="py-3 px-4 text-right text-sm text-red-500">
                     {emp.permision} 
                   </td>
              

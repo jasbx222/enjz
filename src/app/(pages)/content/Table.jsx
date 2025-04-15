@@ -10,34 +10,27 @@ export const Table= ({filterquestions}) => {
           <thead>
             <tr className="bg-[#13294B] text-gray-300">
               <th className="py-3 px-4 text-right">#</th>
-              <th className="py-3 px-4 text-right">الاسم</th>
-              <th className="py-3 px-4 text-right"> السؤال</th>
-              <th className="py-3 px-4 text-right">الجواب</th>
+              <th className="py-3 px-4 text-right">العنوان</th>
+              <th className="py-3 px-4 text-right"> الجواب</th>
               <th className="py-3 px-4 text-right">تاريخ الإنشاء</th>
               <th className="py-3 px-4 text-center">الإجراءات</th>
             </tr>
           </thead>
           <tbody>
             {filterquestions.length > 0 ? (
-              filterquestions.map((ques, index) => (
+              filterquestions.map((q, index) => (
                 <tr
-                  key={ques.id}
+                  key={q.id}
                   className="bg-[#0A1B3D] hover:bg-[#0f2a50] transition-colors"
                 >
                   <td className="py-3 px-4 text-right">{index + 1}</td>
-                  <td className="py-3 px-4 text-right">{ques.user}</td>
-                  <td className="py-3 px-4 text-right">{ques.question}</td>
-                  <td className="py-3 px-4 text-right">
-                    <span className={` h-[40px] w-[40px] flex justify-center  items-center  text-xs font-medium  py-1 px-3`}>
-                      {ques.answer}
-                    </span>
-                  </td>
+                  <td className="py-3 px-4 text-right">{q.title}</td>
+                  <td className="py-3 px-4 text-right">{q.answer}</td>
                   <td className="py-3 px-4 text-right text-sm text-gray-400">
-                    {ques.createdAt} 
+                    {q.createdAt} 
                   </td>
-             
                   <td className="py-3 px-4 text-center flex items-center justify-center gap-2">
-                   
+                    {/* أزرار الإجراءات للمستخدمين */}
                     <button
                       title="تعديل"
                       className="bg-blue-600 h-[40px] w-[40px] flex justify-center  items-center hover:bg-blue-700 text-white px-3 py-1 rounded-md text-base"

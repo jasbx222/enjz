@@ -25,7 +25,7 @@ const data = [
 
 const BarChartComponent = () => {
   return (
-    <div className="w-full   fixed top-80 md:top-64 h-[300px] bg-[#] rounded-lg p-4">
+    <div className="w-full   fixed top-96 md:top-80 h-[300px] bg-[#] rounded-lg p-4">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={data}

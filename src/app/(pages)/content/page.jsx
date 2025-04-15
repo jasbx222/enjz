@@ -1,62 +1,39 @@
-"use client";
+'use client';
 
-import Button from "@/app/components/inputs/Button";
-import SearchInput from "@/app/components/inputs/SearchInput";
-import { Pen, Trash2 } from "lucide-react";
+import { useState } from 'react';
+import SearchInput from '@/app/components/inputs/SearchInput';
+import Button from '@/app/components/inputs/Button';
+import { Table } from './Table';
+const questions = [
+  {
+    id: 1,
+    title: 'how to login',
+    answer: 'login',
+    createdAt: '2025-04-13',
+  },
+
+
+
+];
 
 export default function Page() {
+  const [search, setSearch] = useState('');
+
+  // فلترة المستخدمين بناءً على البحث
+  const filterquestions = questions.filter((q) =>
+    q.title.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
-    <div className="min-h-screen bg-[#0A1B3D] p-5 w-full">
-      <div className="relative top-24 container w-full md:right-8">
-     <Button label={'ابحث عن سؤال'}/>
-    <SearchInput  value={'ابحث عن سؤال'}/>
+    <div dir="rtl" className="min-h-screen bg-[#0A1B3D] conatiner    w-[100%]   text-white">
+   <div className=' relative top-24 lg:right-4'>
+ <Button label={'اضافة جواب '}/>
 
-        <div className="bg-[#13294B] relative top-24 rounded overflow-hidden">
-          <table className="w-full text-right">
-            <thead className="text-gray-300 border-b border-gray-700">
-              <tr className="px-4 py-3">
-                <th className="p-3">#</th>
-                <th className="p-3">العنوان</th>
-                <th className="p-3">تم الإنشاء</th>
-                <th className="p-3">إجراءات</th>
-              </tr>
-            </thead>
-            <tbody className="text-white">
-              <tr className="border border-gray-700 bg-[#0A1B3D] hover:bg-[#0f2a50]">
-                <td className="p-3 border border-gray-500">1</td>
-                <td className="p-3 border border-gray-500">كيف يمكنني تسجيل الدخول؟</td>
-                <td className="p-3 *: border border-gray-500">2023-12-06 | 11:27 ص</td>
-                <td className="p-3 border border-gray-500">
-                  <div className="flex gap-2 justify-end">
-                    <button className="bg-red-600 p-2 rounded hover:bg-red-700">
-                      <Trash2 />
-                    </button>
-                    <button className="bg-indigo-600 p-2 rounded hover:bg-indigo-700">
-                      <Pen />
-                    </button>
-                  </div>
-                </td>
-              </tr>
-
-              <tr className="border border-gray-700 bg-[#0A1B3D] hover:bg-[#0f2a50]">
-                <td className="p-3 border border-gray-500">2</td>
-                <td className="p-3 border border-gray-500">كيف يمكنني إنشاء حساب؟</td>
-                <td className="p-3 border border-gray-500">2023-12-06 | 11:27 ص</td>
-                <td className="p-3 border border-gray-500">
-                  <div className="flex gap-2 justify-end">
-                    <button className="bg-red-600 p-2 rounded hover:bg-red-700">
-                      <Trash2 />
-                    </button>
-                    <button className="bg-indigo-600 p-2 rounded hover:bg-indigo-700">
-                      <Pen />
-                    </button>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+ <SearchInput value={'ابحث عن سؤال او جواب ..'} search={search} onChange={(e)=>setSearch(e.target.value)}/>
+  
+      {/* جدول المستخدمين */}
+      <Table filterquestions={filterquestions}/>
+   </div>
     </div>
   );
 }
