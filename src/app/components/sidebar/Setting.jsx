@@ -1,6 +1,7 @@
 import { FileWarning, HelpCircle, NutOffIcon, UserCheck2 } from "lucide-react";
 import { X } from "lucide-react";
 import Linkes from "./Linkes";
+import Btn from "../logout/Btn";
 
 const Setting = ({x}) => {
   return (
@@ -31,6 +32,7 @@ const Setting = ({x}) => {
         href={"/شس"}
         icon={<FileWarning size={20} />}
       />
+      <Btn/>
     </div>
   );
 };

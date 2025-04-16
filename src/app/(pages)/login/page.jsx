@@ -1,9 +1,10 @@
 "use client";
-import React, { useActionState } from "react";
+import React, { useActionState, useEffect } from "react";
 import Input from "./Input/Input";
 import { loginAuth } from "./Input/loginAuth";
 
 const Page = () => {
+ 
   const [state, action, isPending] = useActionState(loginAuth, undefined);
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
@@ -15,7 +16,7 @@ const Page = () => {
           <p className="text-gray-600 mt-2">أدخل بياناتك للمتابعة</p>
         </div>
 
-        <form action={action}>
+        <form action={action} >
           <Input
             label={"ادخل الايميل الخاص بك"}
             placeholder={"email"}

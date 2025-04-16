@@ -1,13 +1,11 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
 import { motion } from "framer-motion"; // استيراد framer-motion
-
 const MenuBtn = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -35,7 +33,11 @@ const MenuBtn = () => {
 
 
   return (
+
+
+
     <div>
+      
       {isSidebarOpen ? (
         <motion.div
           initial={{ scale: 0 }}
@@ -66,6 +68,7 @@ const MenuBtn = () => {
 
       {isSidebarOpen && <Sidebar isSidebarOpen={isSidebarOpen} />}
     </div>
+ 
   );
 };
 

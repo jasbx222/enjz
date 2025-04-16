@@ -55,9 +55,9 @@ const Charts = () => {
       </div> 
 
       {/* رسم بياني خطي للإيرادات الشهرية */}
-       <div className="bg-white/10 p-6 md:w-[500px] w-[400px] sm:w-[300px] rounded-2xl shadow text-white">
+       <div className="bg-white/10 p-6  md:w-[400px] w-[400px] sm:w-[300px] rounded-2xl shadow text-white">
         <h3 className="text-xl font-semibold mb-4">الإيرادات الشهرية</h3>
-        <LineChart width={400} height={300} data={revenueMonthly}>
+        <LineChart width={400} className=' ' height={300} data={revenueMonthly}>
           <CartesianGrid strokeDasharray="3 3" stroke="#ffffff30" />
           <XAxis dataKey="month" stroke="#fff" />
           <YAxis stroke="#fff" />
