@@ -8,7 +8,7 @@ const Page = () => {
   const [state, action, isPending] = useActionState(loginAuth, undefined);
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-      <div className="w-full max-w-md bg-white shadow-lg rounded-2xl p-8">
+      <div className="w-full max-w-md   rounded-2xl p-8">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-extrabold text-indigo-900">
             تسجيل الدخول
