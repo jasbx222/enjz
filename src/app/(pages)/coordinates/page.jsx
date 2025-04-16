@@ -1,4 +1,4 @@
-
+"use client"
 import { BadgeDollarSign, BookMarked, Users } from 'lucide-react';
 import Charts from './Charts';
 

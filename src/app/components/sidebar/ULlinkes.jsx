@@ -33,7 +33,7 @@ const ULlinkes = () => {
         />
         <Linkes
           label={"احصائيات النظام"}
-          href={"/"}
+          href={"/coordinates"}
           icon={<ChartArea size={20} />}
         />
         <button
