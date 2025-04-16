@@ -34,10 +34,9 @@ const Charts = () => {
   if (!isClient) return null;
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] relative top-12 sm:flex justify-evenly">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px] relative   top-12 sm:flex justify-evenly items-center">
 
-      {/* رسم بياني دائري لحالة الاشتراكات */}
-      <div className="bg-white/10 p-6 rounded-2xl w-[300px] shadow text-white">
+       <div className="bg-white/10 p-6 rounded-2xl w-[300px] relaitve  right-12 md:right-0 shadow text-white">
         <h3 className="text-xl font-semibold mb-4">حالة الاشتراكات</h3>
         <PieChart width={300} height={250}>
           <Pie
@@ -53,19 +52,19 @@ const Charts = () => {
             ))}
           </Pie>
         </PieChart>
-      </div>
+      </div> 
 
       {/* رسم بياني خطي للإيرادات الشهرية */}
-      <div className="bg-white/10 p-6 md:w-[500px] rounded-2xl shadow text-white">
+       <div className="bg-white/10 p-6 md:w-[500px] w-[400px] sm:w-[300px] rounded-2xl shadow text-white">
         <h3 className="text-xl font-semibold mb-4">الإيرادات الشهرية</h3>
-        <LineChart width={500} height={300} data={revenueMonthly}>
+        <LineChart width={400} height={300} data={revenueMonthly}>
           <CartesianGrid strokeDasharray="3 3" stroke="#ffffff30" />
           <XAxis dataKey="month" stroke="#fff" />
           <YAxis stroke="#fff" />
           <Tooltip />
           <Line type="monotone" dataKey="revenue" stroke="#4ADE80" strokeWidth={3} />
         </LineChart>
-      </div>
+      </div> 
     </div>
   );
 };
