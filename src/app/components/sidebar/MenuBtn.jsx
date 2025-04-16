@@ -43,8 +43,10 @@ const MenuBtn = () => {
         </motion.div>
       )}
 
-
-      <Sidebar isSidebarOpen={isSidebarOpen} />
+{
+  isSidebarOpen && 
+  <Sidebar isSidebarOpen={isSidebarOpen} />
+}
     </div>
   );
 };
