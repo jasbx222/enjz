@@ -35,7 +35,6 @@ const users = [
 export default function Page() {
   const [search, setSearch] = useState('');
 
-  // فلترة المستخدمين بناءً على البحث
   const filteredUsers = users.filter((user) =>
     user.name.toLowerCase().includes(search.toLowerCase())
   );
@@ -43,12 +42,13 @@ export default function Page() {
   return (
     <div dir="rtl" className="min-h-screen bg-[#0A1B3D] conatiner    w-[100%]   text-white">
    <div className=' relative top-24 lg:right-4'>
- <Button label={'اضافة مستخدم '}/>
+ <Button label={'اضافة مستخدم '} link={'/users/crud/createusers/'}/>
 
  <SearchInput value={'ابحث عن مستخدم ..'} search={search} onChange={(e)=>setSearch(e.target.value)}/>
   
       {/* جدول المستخدمين */}
       <TableU filteredUsers={filteredUsers}/>
+    
    </div>
     </div>
   );

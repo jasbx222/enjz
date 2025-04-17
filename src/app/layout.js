@@ -4,9 +4,9 @@ import "./globals.css";
 import MenuBtn from "./components/sidebar/MenuBtn";
 
 const notoNaskhArabic = Noto_Naskh_Arabic({
-  subsets: ['arabic'],  // تأكد من استخدام مجموعة الحروف العربية
-  weight: '400',        // يمكنك اختيار الوزن المناسب
-  style: 'normal',      // أو 'italic' إذا كنت بحاجة
+  subsets: ['arabic'],  
+  weight: '400',       
+  style: 'normal',      
 });
 
 export const metadata = {

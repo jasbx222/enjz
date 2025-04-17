@@ -1,3 +1,5 @@
+import { Logo } from "./Logo"
+
 const Input = ({
   label,
   id,
@@ -7,6 +9,7 @@ const Input = ({
 }) => {
   return (
     <div className="mb-5 w-full">
+
       <label
         htmlFor={id}
         className="block text-sm font-bold mb-2 text-right text-gray-700"

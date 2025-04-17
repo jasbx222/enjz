@@ -17,12 +17,9 @@ export const loginAuth=async(prevState,formData)=>{
         }
       });
   
-      if (res.status >= 200) {
-       
-        cookies().set('token', res.data.token);  // تعيين الكوكيز
+      if (res.status >=200)  cookies().set('token', res.data.token);  // تعيين الكوكيز
      
-       
-      } 
+     
     } catch (error) {
     console.log(error)
     }

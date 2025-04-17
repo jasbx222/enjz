@@ -1,11 +1,23 @@
-"use client";
+'use client';
 
 import { Menu, X } from "lucide-react";
-import React, {  useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
-import { motion } from "framer-motion"; // استيراد framer-motion
+import { motion } from "framer-motion";
+import { getToken } from "@/app/lib/tokens/getToken";
+
 const MenuBtn = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [token, setToken] = useState(null);
+
+  useEffect(() => {
+    const fetchToken = async () => {
+      const storedToken = await getToken('token');
+      setToken(storedToken);
+    };
+
+    fetchToken();
+  }, []);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -19,30 +31,20 @@ const MenuBtn = () => {
     };
 
     window.addEventListener('keydown', handleKeyDown);
-
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [setIsSidebarOpen]);
-
-
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-
   return (
-
-
-
     <div>
-      
       {isSidebarOpen ? (
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 0.2 }} // سرعة الأنيميشن
+          transition={{ duration: 0.2 }}
         >
           <X
             onClick={toggleSidebar}
@@ -55,7 +57,7 @@ const MenuBtn = () => {
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 0.2 }} // سرعة الأنيميشن
+          transition={{ duration: 0.2 }}
         >
           <Menu
             onClick={toggleSidebar}
@@ -66,9 +68,8 @@ const MenuBtn = () => {
         </motion.div>
       )}
 
-      {isSidebarOpen && <Sidebar isSidebarOpen={isSidebarOpen} />}
+      {isSidebarOpen && token && <Sidebar isSidebarOpen={isSidebarOpen} />}
     </div>
- 
   );
 };
 
